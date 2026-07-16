@@ -1,6 +1,7 @@
 import './style.css'
 //import { setupCounter } from './counter.ts'
-import { enviromentsComponents } from './concepts/01-eviroments'
+//import { enviromentsComponents } from './concepts/01-eviroments'
+import { CallbackComponent } from './concepts/02callbacks';
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 <section id="center">
@@ -22,4 +23,4 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 
 const elements = document.querySelector<HTMLDivElement>('#center');
 
-enviromentsComponents(elements);
+CallbackComponent(elements);
