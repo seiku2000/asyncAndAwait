@@ -1,7 +1,7 @@
 import './style.css'
-//import { setupCounter } from './counter.ts'
 //import { enviromentsComponents } from './concepts/01-eviroments'
-import { CallbackComponent } from './concepts/02callbacks';
+//import { CallbackComponent } from './concepts/02callbacks';
+import { CallbackComponent } from './concepts';
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 <section id="center">
