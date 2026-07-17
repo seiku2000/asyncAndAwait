@@ -1,25 +1,33 @@
 import { heroes } from "./data/heroes";
-import type { callBackInterface } from "./interfaces/callbackInterface";
+import type { callBackHellInterface } from "./interfaces/callbackHell";
 
-export const CallbackComponent = (element: HTMLDivElement) => {
+export const CallbackHell = (element: HTMLDivElement) => {
     let id= "5d86371f1efebc31def272e2";
+    let id2 = "5d86371f25a058e5b1c8a65e";
   //  console.log('CallbackComponent');
 
   //implemantado callback
-    findHero(id, (errorMessage,IroMan) =>{
+    findHero(id, (errorMessage,heroe1) =>{
         if(errorMessage){
             element.innerHTML = errorMessage;
             return
         }
+        //? evitar este tipo de llamados
+        findHero(id2 , (errorMessage,heroe2 )=>{
+            if(errorMessage){
+                element.innerHTML = errorMessage;
+                return
+            }
+            element.innerHTML = `${heroe1.name} y  ${heroe2.name}`
 
-       // console.log(IroMan);
-        element.innerHTML = IroMan.name;
-        
-       // element.innerHTML = IroMan?.name || "hero no encontrado";
+        });
+
+       
+     
     })
 }
 //callback implementation
-const findHero:callBackInterface = (id:string,callback)=>{
+const findHero:callBackHellInterface = (id:string,callback)=>{
   
     const heroe =heroes.find(heroe => heroe.id === id);
     
