@@ -2,6 +2,7 @@ import './style.css'
 //import { enviromentsComponents } from './concepts/01-eviroments'
 //import { CallbackComponent } from './concepts/02callbacks';
 import { CallbackComponent , CallbackHell } from './concepts';
+import { PromisesComponent } from './concepts/04-PromesesComponen';
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 <section id="center">
@@ -24,4 +25,5 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 const elements = document.querySelector<HTMLDivElement>('#center');
 
 //CallbackComponent(elements);
-CallbackHell(elements);
+//CallbackHell(elements);
+PromisesComponent(elements);
