@@ -3,7 +3,7 @@ import './style.css'
 //import { CallbackComponent } from './concepts/02callbacks';
 import { CallbackComponent , CallbackHell , PromisesComponent,promiseRaceComponent,
      asyncComponent, asyncAwaitComponet, 
-     asyncAwaitSecuencie} from './concepts';
+     asyncAwaitSecuencie, forAwaitComponent } from './concepts';
 //import { asyncComponent } from './concepts/05-async';
 //import { PromisesComponent } from './concepts/04-PromesesComponen';
 
@@ -33,6 +33,7 @@ const elements = document.querySelector<HTMLDivElement>('#center');
 //promiseRaceComponent(elements);
 //asyncComponent(elements);
 //asyncAwaitComponet(elements);
-asyncAwaitSecuencie(elements);
+//asyncAwaitSecuencie(elements);
+forAwaitComponent(elements);
 
 
