@@ -1,7 +1,8 @@
 import './style.css'
 //import { enviromentsComponents } from './concepts/01-eviroments'
 //import { CallbackComponent } from './concepts/02callbacks';
-import { CallbackComponent , CallbackHell , PromisesComponent,promiseRaceComponent, asyncComponent } from './concepts';
+import { CallbackComponent , CallbackHell , PromisesComponent,promiseRaceComponent,
+     asyncComponent, asyncAwaitComponet } from './concepts';
 //import { asyncComponent } from './concepts/05-async';
 //import { PromisesComponent } from './concepts/04-PromesesComponen';
 
@@ -29,4 +30,5 @@ const elements = document.querySelector<HTMLDivElement>('#center');
 //CallbackHell(elements);
 //PromisesComponent(elements);
 //promiseRaceComponent(elements);
-asyncComponent(elements);
+//asyncComponent(elements);
+asyncAwaitComponet(elements);
