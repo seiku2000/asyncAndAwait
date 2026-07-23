@@ -4,7 +4,7 @@ import './style.css'
 import { CallbackComponent , CallbackHell , PromisesComponent,promiseRaceComponent,
      asyncComponent, asyncAwaitComponet, 
      asyncAwaitSecuencie, forAwaitComponent, 
-     generatorFunctionsComponent} from './concepts';
+     generatorFunctionsComponent, generatorAsyncComponent} from './concepts';
 //import { asyncComponent } from './concepts/05-async';
 //import { PromisesComponent } from './concepts/04-PromesesComponen';
 
@@ -36,4 +36,5 @@ const elements = document.querySelector<HTMLDivElement>('#center');
 //asyncAwaitComponet(elements);
 //asyncAwaitSecuencie(elements);
 //forAwaitComponent(elements);
-generatorFunctionsComponent(elements);  
+//generatorFunctionsComponent(elements);
+generatorAsyncComponent(elements);  
